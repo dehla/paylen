@@ -23,4 +23,10 @@ function nama()
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 	$ex = curl_exec($ch);
+	function acak($panjang)
+{
+    $karakter= '1234567890';
+    $string = '';
+    for ($i = 0; $i < $panjang; $i++) {
+  $pos = rand(0, strlen($karakter)-1);
   ?>
